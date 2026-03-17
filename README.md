@@ -1,6 +1,16 @@
 # FSMC-Pose: Frequency and Spatial Fusion with Multiscale Self-calibration for Cattle Mounting Pose Estimation
-
 FSMC-Pose is a real-time framework for accurate dairy cattle mounting pose estimation. This configuration is based on MMPose. Please install MMPose first following the instructions below.
+
+<table align="center">
+  <tr>
+    <td><img width="200" height="200" alt="bjtu" src="https://github.com/user-attachments/assets/5f5f5530-f09d-42a0-b5af-1f306e712456" /></td>
+    <td><img width="200" height="200" alt="logo" src="https://github.com/user-attachments/assets/3d409ea0-9eb1-4600-bc80-db2cc35b406c" /></td>
+    <td><img width="200" height="200" alt="qinghua" src="https://github.com/user-attachments/assets/e762ce93-97c8-4826-9b53-02a65056b305" /></td>    
+    <td><img width="300" height="300" alt="启元" src="https://github.com/user-attachments/assets/5dee8ab1-cb1f-4564-8d46-2c0a5140fa0c" /></td>
+    <td><img width="300" height="300" alt="gu" src="https://github.com/user-attachments/assets/84696757-420f-4698-b432-76d9e04b215d" /></td>
+  </tr>
+</table>
+
 
 <p align="center">
   <a href="PAPER_URL">
@@ -17,13 +27,13 @@ FSMC-Pose is a real-time framework for accurate dairy cattle mounting pose estim
   </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f2e31c7a-c4bf-4cbf-9098-8738540362bd" width="52%" />
   <img src="https://github.com/user-attachments/assets/cddac540-0f7e-4244-b263-78b3702fcf70" width="47%" />
+  <img src="https://github.com/user-attachments/assets/f2e31c7a-c4bf-4cbf-9098-8738540362bd" width="52%" />
 </p>
 
 
 ## Updates/News 📣
-* 🏆 **News (Feb. 2026)**: We are excited to announce that FSMC-Pose has been accepted for CVPR 2026 Findings! 🎉
+* 🎉 **News (Feb. 2026)**: We are excited to announce that FSMC-Pose has been accepted for CVPR 2026 Findings!
 * 🔗 **News**: Please find the open-source dataset on Hugging Face: [MOUNT-Cattle](URL).
 
 ## Dataset
