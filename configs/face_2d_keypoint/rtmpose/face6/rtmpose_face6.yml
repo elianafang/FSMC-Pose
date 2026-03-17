@@ -1,0 +1,51 @@
+Collections:
+- Name: RTMPose
+  Paper:
+    Title: "RTMPose: Real-Time Multi-Person Pose Estimation based on MMPose"
+    URL: httpxxx'
+  README: httpxxx'
+Models:
+- Config: configs/face_2d_keypoint/rtmpose/face6/rtmpose-t_8xb256-120e_face6-256x256.py
+  In Collection: RTMPose
+  Metadata:
+    Architecture: &id001
+    - RTMPose
+    Training Data: &id002
+    - COCO-Wholebody-Face
+    - WFLW
+    - 300W
+    - COFW
+    - Halpe
+    - LaPa
+  Name: rtmpose-t_8xb256-120e_face6-256x256
+  Results:
+  - Dataset: Face6
+    Metrics:
+      NME: 1.67
+    Task: Face 2D Keypoint
+  Weights: httpxxx'
+- Config: configs/face_2d_keypoint/rtmpose/face6/rtmpose-s_8xb256-120e_face6-256x256.py
+  In Collection: RTMPose
+  Metadata:
+    Architecture: *id001
+    Training Data: *id002
+  Name: rtmpose-s_8xb256-120e_face6-256x256
+  Results:
+  - Dataset: Face6
+    Metrics:
+      NME: 1.59
+    Task: Face 2D Keypoint
+  Weights: httpxxx'
+- Config: configs/face_2d_keypoint/rtmpose/face6/rtmpose-m_8xb256-120e_face6-256x256.py
+  In Collection: RTMPose
+  Metadata:
+    Architecture: *id001
+    Training Data: *id002
+  Name: rtmpose-m_8xb256-120e_face6-256x256
+  Alias: face
+  Results:
+  - Dataset: Face6
+    Metrics:
+      NME: 1.44
+    Task: Face 2D Keypoint
+  Weights: httpxxx'

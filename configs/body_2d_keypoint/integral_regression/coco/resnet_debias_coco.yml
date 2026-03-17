@@ -1,0 +1,25 @@
+Collections:
+- Name: DebiasIPR
+  Paper:
+    Title: Removing the Bias of Integral Pose Regression
+    URL: httpxxx'
+  README: httpxxx'
+Models:
+- Config: configs/body_2d_keypoint/integral_regression/coco/ipr_res50_debias--8xb64-210e_coco-256x256.py
+  In Collection: DebiasIPR
+  Metadata:
+    Architecture: &id001
+    - Debias
+    - ResNet
+    Training Data: COCO
+  Name: ipr_res50_debias--8xb64-210e_coco-256x256
+  Results:
+  - Dataset: COCO
+    Metrics:
+      AP: 0.675
+      AP@0.5: 0.872
+      AP@0.75: 0.74
+      AR: 0.765
+      AR@0.5: 0.928
+    Task: Body 2D Keypoint
+  Weights: httpxxx'

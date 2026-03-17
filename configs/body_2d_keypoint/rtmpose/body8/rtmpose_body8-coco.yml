@@ -1,0 +1,98 @@
+Collections:
+- Name: RTMPose
+  Paper:
+    Title: "RTMPose: Real-Time Multi-Person Pose Estimation based on MMPose"
+    URL: httpxxx'
+  README: httpxxx'
+Models:
+- Config: configs/body_2d_keypoint/rtmpose/body8/rtmpose-t_8xb256-420e_body8-256x192.py
+  In Collection: RTMPose
+  Metadata:
+    Architecture: &id001
+    - RTMPose
+    Training Data: &id002
+    - AI Challenger
+    - COCO
+    - CrowdPose
+    - MPII
+    - sub-JHMDB
+    - Halpe
+    - PoseTrack18
+  Name: rtmpose-t_8xb256-420e_body8-256x192
+  Results:
+  - Dataset: Body8
+    Metrics:
+      AP: 0.659
+      Mean@0.1: 0.914
+    Task: Body 2D Keypoint
+  Weights: httpxxx'
+- Config: configs/body_2d_keypoint/rtmpose/body8/rtmpose-s_8xb256-420e_body8-256x192.py
+  In Collection: RTMPose
+  Metadata:
+    Architecture: *id001
+    Training Data: *id002
+  Name: rtmpose-s_8xb256-420e_body8-256x192
+  Results:
+  - Dataset: Body8
+    Metrics:
+      AP: 0.697
+      Mean@0.1: 0.925
+    Task: Body 2D Keypoint
+  Weights: httpxxx'
+- Config: configs/body_2d_keypoint/rtmpose/body8/rtmpose-m_8xb256-420e_body8-256x192.py
+  In Collection: RTMPose
+  Alias:
+    - human
+    - body
+    - body17
+  Metadata:
+    Architecture: *id001
+    Training Data: *id002
+  Name: rtmpose-m_8xb256-420e_body8-256x192
+  Results:
+  - Dataset: Body8
+    Metrics:
+      AP: 0.749
+      Mean@0.1: 0.943
+    Task: Body 2D Keypoint
+  Weights: httpxxx'
+- Config: configs/body_2d_keypoint/rtmpose/body8/rtmpose-l_8xb256-420e_body8-256x192.py
+  In Collection: RTMPose
+  Metadata:
+    Architecture: *id001
+    Training Data: *id002
+  Name: rtmpose-l_8xb256-420e_body8-256x192
+  Results:
+  - Dataset: Body8
+    Metrics:
+      AP: 0.767
+      Mean@0.1: 0.951
+    Task: Body 2D Keypoint
+  Weights: httpxxx'
+- Config: configs/body_2d_keypoint/rtmpose/body8/rtmpose-m_8xb256-420e_body8-384x288.py
+  In Collection: RTMPose
+  Metadata:
+    Architecture: *id001
+    Training Data: *id002
+  Name: rtmpose-m_8xb256-420e_body8-384x288
+  Results:
+  - Dataset: Body8
+    Metrics:
+      AP: 0.766
+      Mean@0.1: 0.946
+    Task: Body 2D Keypoint
+  Weights: httpxxx'
+- Config: configs/body_2d_keypoint/rtmpose/body8/rtmpose-l_8xb256-420e_body8-384x288.py
+  In Collection: RTMPose
+  Alias: rtmpose-l
+  Metadata:
+    Architecture: *id001
+    Training Data: *id002
+  Name: rtmpose-l_8xb256-420e_body8-384x288
+  Results:
+  - Dataset: Body8
+    Metrics:
+      AP: 0.783
+      Mean@0.1: 0.964
+    Task: Body 2D Keypoint
+  Weights: httpxxx'

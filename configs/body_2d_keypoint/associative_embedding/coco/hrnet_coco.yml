@@ -1,0 +1,25 @@
+Collections:
+- Name: AE
+  Paper:
+    Title: "Associative embedding: End-to-end learning for joint detection and grouping"
+    URL: httpxxx'
+  README: httpxxx'
+Models:
+- Config: configs/body_2d_keypoint/associative_embedding/coco/ae_hrnet-w32_8xb24-300e_coco-512x512.py
+  In Collection: AE
+  Metadata:
+    Architecture:
+    - AE
+    - HRNet
+    Training Data: COCO
+  Name: ae_hrnet-w32_8xb24-300e_coco-512x512
+  Results:
+  - Dataset: COCO
+    Metrics:
+      AP: 0.656
+      AP@0.5: 0.864
+      AP@0.75: 0.719
+      AR: 0.711
+      AR@0.5: 0.893
+    Task: Body 2D Keypoint
+  Weights: httpxxx'

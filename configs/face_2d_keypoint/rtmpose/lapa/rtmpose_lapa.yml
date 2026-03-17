@@ -1,0 +1,15 @@
+Models:
+- Config: configs/face_2d_keypoint/rtmpose/lapa/rtmpose-m_8xb64-120e_lapa-256x256.py
+  In Collection: RTMPose
+  Alias: face
+  Metadata:
+    Architecture:
+    - RTMPose
+    Training Data: LaPa
+  Name: rtmpose-m_8xb64-120e_lapa-256x256
+  Results:
+  - Dataset: WFLW
+    Metrics:
+      NME: 1.29
+    Task: Face 2D Keypoint
+  Weights: httpxxx'

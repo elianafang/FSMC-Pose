@@ -1,0 +1,378 @@
+Metadata-Version: 2.1
+Name: mmpose
+Version: 1.3.2
+Summary: OpenMMLab Pose Estimation Toolbox and Benchmark.
+Home-page: httpxxx'
+Author: MMPose Contributors
+Author-email: openmmlab@gmail.com
+License: Apache License 2.0
+Keywords: computer vision,pose estimation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: tests
+Provides-Extra: optional
+Provides-Extra: mim
+License-File: LICENSE
+License-File: LICENSES.md
+
+<div align="center">
+  <img src="resources/mmpose-logo.png" width="450"/>
+  <div>&nbsp;</div>
+  <div align="center">
+    <b>OpenMMLab website</b>
+    <sup>
+      <a href="httpxxx'
+        <i>HOT</i>
+      </a>
+    </sup>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <b>OpenMMLab platform</b>
+    <sup>
+      <a href="httpxxx'
+        <i>TRY IT OUT</i>
+      </a>
+    </sup>
+  </div>
+  <div>&nbsp;</div>
+
+[![Documentation](httpxxx')](httpxxx')
+[![actions](httpxxx')](httpxxx')
+[![codecov](httpxxx')](httpxxx')
+[![PyPI](httpxxx')](httpxxx')
+[![LICENSE](httpxxx')](httpxxx')
+[![Average time to resolve an issue](httpxxx')](httpxxx')
+[![Percentage of issues still open](httpxxx')](httpxxx')
+[![Open in OpenXLab](httpxxx')](httpxxx')
+
+[📘Documentation](httpxxx') |
+[🛠️Installation](httpxxx') |
+[👀Model Zoo](httpxxx') |
+[📜Papers](httpxxx') |
+[🆕Update News](httpxxx') |
+[🤔Reporting Issues](httpxxx') |
+[🔥RTMPose](/projects/rtmpose/)
+
+</div>
+
+<div align="center">
+  <a href="httpxxx' style="text-decoration:none;">
+    <img src="httpxxx' width="3%" alt="" /></a>
+  <img src="httpxxx' width="3%" alt="" />
+  <a href="httpxxx' style="text-decoration:none;">
+    <img src="httpxxx' width="3%" alt="" /></a>
+  <img src="httpxxx' width="3%" alt="" />
+  <a href="httpxxx' style="text-decoration:none;">
+    <img src="httpxxx' width="3%" alt="" /></a>
+  <img src="httpxxx' width="3%" alt="" />
+  <a href="httpxxx' style="text-decoration:none;">
+    <img src="httpxxx' width="3%" alt="" /></a>
+  <img src="httpxxx' width="3%" alt="" />
+  <a href="httpxxx' style="text-decoration:none;">
+    <img src="httpxxx' width="3%" alt="" /></a>
+  <img src="httpxxx' width="3%" alt="" />
+  <a href="httpxxx' style="text-decoration:none;">
+    <img src="httpxxx' width="3%" alt="" /></a>
+</div>
+
+## Introduction
+
+English | [](README_CN.md)
+
+MMPose is an open-source toolbox for pose estimation based on PyTorch.
+It is a part of the [OpenMMLab project](httpxxx').
+
+The main branch works with **PyTorch 1.8+**.
+
+httpxxx'
+
+<br/>
+
+<details close>
+<summary><b>Major Features</b></summary>
+
+- **Support diverse tasks**
+
+  We support a wide spectrum of mainstream pose analysis tasks in current research community, including 2d multi-person human pose estimation, 2d hand pose estimation, 2d face landmark detection, 133 keypoint whole-body human pose estimation, 3d human mesh recovery, fashion landmark detection and animal pose estimation.
+  See [Demo](demo/docs/en) for more information.
+
+- **Higher efficiency and higher accuracy**
+
+  MMPose implements multiple state-of-the-art (SOTA) deep learning models, including both top-down & bottom-up approaches. We achieve faster training speed and higher accuracy than other popular codebases, such as [HRNet](httpxxx').
+  See [benchmark.md](docs/en/notes/benchmark.md) for more information.
+
+- **Support for various datasets**
+
+  The toolbox directly supports multiple popular and representative datasets, COCO, AIC, MPII, MPII-TRB, OCHuman etc.
+  See [dataset_zoo](docs/en/dataset_zoo) for more information.
+
+- **Well designed, tested and documented**
+
+  We decompose MMPose into different components and one can easily construct a customized
+  pose estimation framework by combining different modules.
+  We provide detailed documentation and API reference, as well as unittests.
+
+</details>
+
+## What's New
+
+- Release [RTMW3D](/projects/rtmpose3d), a real-time model for 3D wholebody pose estimation.
+
+- Release [RTMO](/projects/rtmo), a state-of-the-art real-time method for multi-person pose estimation.
+
+  ![rtmo](httpxxx')
+
+- Release [RTMW](/configs/wholebody_2d_keypoint/rtmpose/cocktail14/rtmw_cocktail14.md) models in various sizes ranging from RTMW-m to RTMW-x. The input sizes include `256x192` and `384x288`. This provides flexibility to select the right model for different speed and accuracy requirements.
+
+- Support inference of [PoseAnything](/projects/pose_anything). Web demo is available [here](httpxxx').
+
+- Support for new datasets:
+
+  - (ICCV 2015) [300VW](/docs/en/dataset_zoo/2d_face_keypoint.md)
+
+- Welcome to use the [*MMPose project*](/projects/README.md). Here, you can discover the latest features and algorithms in MMPose and quickly share your ideas and code implementations with the community. Adding new features to MMPose has become smoother:
+
+  - Provides a simple and fast way to add new algorithms, features, and applications to MMPose.
+  - More flexible code structure and style, fewer restrictions, and a shorter code review process.
+  - Utilize the powerful capabilities of MMPose in the form of independent projects without being constrained by the code framework.
+  - Newly added projects include:
+    - [RTMPose](/projects/rtmpose/)
+    - [RTMO](/projects/rtmo/)
+    - [RTMPose3D](/projects/rtmpose3d/)
+    - [PoseAnything](/projects/pose_anything/)
+    - [YOLOX-Pose](/projects/yolox_pose/)
+    - [MMPose4AIGC](/projects/mmpose4aigc/)
+    - [Simple Keypoints](/projects/skps/)
+    - [Just Dance](/projects/just_dance/)
+    - [Uniformer](/projects/uniformer/)
+  - Start your journey as an MMPose contributor with a simple [example project](/projects/example_project/), and let's build a better MMPose together!
+
+<br/>
+
+- January 4, 2024: MMPose [v1.3.0](httpxxx') has been officially released, with major updates including:
+
+  - Support for new datasets: ExLPose, H3WB
+  - Release of new RTMPose series models: RTMO, RTMW
+  - Support for new algorithm PoseAnything
+  - Enhanced Inferencer with optional progress bar and improved affinity for one-stage methods
+
+  Please check the complete [release notes](httpxxx') for more details on the updates brought by MMPose v1.3.0!
+
+## 0.x / 1.x Migration
+
+MMPose v1.0.0 is a major update, including many API and config file changes. Currently, a part of the algorithms have been migrated to v1.0.0, and the remaining algorithms will be completed in subsequent versions. We will show the migration progress in this [Roadmap](httpxxx').
+
+If your algorithm has not been migrated, you can continue to use the [0.x branch](httpxxx') and [old documentation](httpxxx').
+
+## Installation
+
+Please refer to [installation.md](httpxxx') for more detailed installation and dataset preparation.
+
+## Getting Started
+
+We provided a series of tutorials about the basic usage of MMPose for new users:
+
+1. For the basic usage of MMPose:
+
+   - [A 20-minute Tour to MMPose](httpxxx')
+   - [Demos](httpxxx')
+   - [Inference](httpxxx')
+   - [Configs](httpxxx')
+   - [Prepare Datasets](httpxxx')
+   - [Train and Test](httpxxx')
+   - [Deployment](httpxxx')
+   - [Model Analysis](httpxxx')
+   - [Dataset Annotation and Preprocessing](httpxxx')
+
+2. For developers who wish to develop based on MMPose:
+
+   - [Learn about Codecs](httpxxx')
+   - [Dataflow in MMPose](httpxxx')
+   - [Implement New Models](httpxxx')
+   - [Customize Datasets](httpxxx')
+   - [Customize Data Transforms](httpxxx')
+   - [Customize Evaluation](httpxxx')
+   - [Customize Optimizer](httpxxx')
+   - [Customize Logging](httpxxx')
+   - [How to Deploy](httpxxx')
+   - [Model Analysis](httpxxx')
+   - [Migration Guide](httpxxx')
+
+3. For researchers and developers who are willing to contribute to MMPose:
+
+   - [Contribution Guide](httpxxx')
+
+4. For some common issues, we provide a FAQ list:
+
+   - [FAQ](httpxxx')
+
+## Model Zoo
+
+Results and models are available in the **README.md** of each method's config directory.
+A summary can be found in the [Model Zoo](httpxxx') page.
+
+<details open>
+<summary><b>Supported algorithms:</b></summary>
+
+- [x] [DeepPose](httpxxx') (CVPR'2014)
+- [x] [CPM](httpxxx') (CVPR'2016)
+- [x] [Hourglass](httpxxx') (ECCV'2016)
+- [x] [SimpleBaseline3D](httpxxx') (ICCV'2017)
+- [ ] [Associative Embedding](httpxxx') (NeurIPS'2017)
+- [x] [SimpleBaseline2D](httpxxx') (ECCV'2018)
+- [x] [DSNT](httpxxx') (ArXiv'2021)
+- [x] [HRNet](httpxxx') (CVPR'2019)
+- [x] [IPR](httpxxx') (ECCV'2018)
+- [x] [VideoPose3D](httpxxx') (CVPR'2019)
+- [x] [HRNetv2](httpxxx') (TPAMI'2019)
+- [x] [MSPN](httpxxx') (ArXiv'2019)
+- [x] [SCNet](httpxxx') (CVPR'2020)
+- [ ] [HigherHRNet](httpxxx') (CVPR'2020)
+- [x] [RSN](httpxxx') (ECCV'2020)
+- [x] [InterNet](httpxxx') (ECCV'2020)
+- [ ] [VoxelPose](httpxxx') (ECCV'2020)
+- [x] [LiteHRNet](httpxxx') (CVPR'2021)
+- [x] [ViPNAS](httpxxx') (CVPR'2021)
+- [x] [Debias-IPR](httpxxx') (ICCV'2021)
+- [x] [SimCC](httpxxx') (ECCV'2022)
+
+</details>
+
+<details open>
+<summary><b>Supported techniques:</b></summary>
+
+- [x] [FPN](httpxxx') (CVPR'2017)
+- [x] [FP16](httpxxx') (ArXiv'2017)
+- [x] [Wingloss](httpxxx') (CVPR'2018)
+- [x] [AdaptiveWingloss](httpxxx') (ICCV'2019)
+- [x] [DarkPose](httpxxx') (CVPR'2020)
+- [x] [UDP](httpxxx') (CVPR'2020)
+- [x] [Albumentations](httpxxx') (Information'2020)
+- [x] [SoftWingloss](httpxxx') (TIP'2021)
+- [x] [RLE](httpxxx') (ICCV'2021)
+
+</details>
+
+<details open>
+<summary><b>Supported datasets:</b></summary>
+
+- [x] [AFLW](httpxxx') \[[homepage](httpxxx')\] (ICCVW'2011)
+- [x] [sub-JHMDB](httpxxx') \[[homepage](httpxxx')\] (ICCV'2013)
+- [x] [COFW](httpxxx') \[[homepage](httpxxx')\] (ICCV'2013)
+- [x] [MPII](httpxxx') \[[homepage](httpxxx')\] (CVPR'2014)
+- [x] [Human3.6M](httpxxx') \[[homepage](httpxxx')\] (TPAMI'2014)
+- [x] [COCO](httpxxx') \[[homepage](httpxxx')\] (ECCV'2014)
+- [x] [CMU Panoptic](httpxxx') \[[homepage](httpxxx')\] (ICCV'2015)
+- [x] [300VW](httpxxx') \[[homepage](httpxxx')\] (ICCV'2015)
+- [x] [DeepFashion](httpxxx') \[[homepage](httpxxx')\] (CVPR'2016)
+- [x] [300W](httpxxx') \[[homepage](httpxxx')\] (IMAVIS'2016)
+- [x] [RHD](httpxxx') \[[homepage](httpxxx')\] (ICCV'2017)
+- [x] [CMU Panoptic HandDB](httpxxx') \[[homepage](httpxxx')\] (CVPR'2017)
+- [x] [AI Challenger](httpxxx') \[[homepage](httpxxx')\] (ArXiv'2017)
+- [x] [MHP](httpxxx') \[[homepage](httpxxx')\] (ACM MM'2018)
+- [x] [WFLW](httpxxx') \[[homepage](httpxxx')\] (CVPR'2018)
+- [x] [PoseTrack18](httpxxx') \[[homepage](httpxxx')\] (CVPR'2018)
+- [x] [OCHuman](httpxxx') \[[homepage](httpxxx')\] (CVPR'2019)
+- [x] [CrowdPose](httpxxx') \[[homepage](httpxxx')\] (CVPR'2019)
+- [x] [MPII-TRB](httpxxx') \[[homepage](httpxxx')\] (ICCV'2019)
+- [x] [FreiHand](httpxxx') \[[homepage](httpxxx')\] (ICCV'2019)
+- [x] [Animal-Pose](httpxxx') \[[homepage](httpxxx')\] (ICCV'2019)
+- [x] [OneHand10K](httpxxx') \[[homepage](httpxxx')\] (TCSVT'2019)
+- [x] [Vinegar Fly](httpxxx') \[[homepage](httpxxx')\] (Nature Methods'2019)
+- [x] [Desert Locust](httpxxx') \[[homepage](httpxxx')\] (Elife'2019)
+- [x] [Grévy’s Zebra](httpxxx') \[[homepage](httpxxx')\] (Elife'2019)
+- [x] [ATRW](httpxxx') \[[homepage](httpxxx')\] (ACM MM'2020)
+- [x] [Halpe](httpxxx') \[[homepage](httpxxx')\] (CVPR'2020)
+- [x] [COCO-WholeBody](httpxxx') \[[homepage](httpxxx')\] (ECCV'2020)
+- [x] [MacaquePose](httpxxx') \[[homepage](httpxxx')\] (bioRxiv'2020)
+- [x] [InterHand2.6M](httpxxx') \[[homepage](httpxxx')\] (ECCV'2020)
+- [x] [AP-10K](httpxxx') \[[homepage](httpxxx')\] (NeurIPS'2021)
+- [x] [Horse-10](httpxxx') \[[homepage](httpxxx')\] (WACV'2021)
+- [x] [Human-Art](httpxxx') \[[homepage](httpxxx')\] (CVPR'2023)
+- [x] [LaPa](httpxxx') \[[homepage](httpxxx')\] (AAAI'2020)
+- [x] [UBody](httpxxx') \[[homepage](httpxxx')\] (CVPR'2023)
+
+</details>
+
+<details open>
+<summary><b>Supported backbones:</b></summary>
+
+- [x] [AlexNet](httpxxx') (NeurIPS'2012)
+- [x] [VGG](httpxxx') (ICLR'2015)
+- [x] [ResNet](httpxxx') (CVPR'2016)
+- [x] [ResNext](httpxxx') (CVPR'2017)
+- [x] [SEResNet](httpxxx') (CVPR'2018)
+- [x] [ShufflenetV1](httpxxx') (CVPR'2018)
+- [x] [ShufflenetV2](httpxxx') (ECCV'2018)
+- [x] [MobilenetV2](httpxxx') (CVPR'2018)
+- [x] [ResNetV1D](httpxxx') (CVPR'2019)
+- [x] [ResNeSt](httpxxx') (ArXiv'2020)
+- [x] [Swin](httpxxx') (CVPR'2021)
+- [x] [HRFormer](httpxxx') (NIPS'2021)
+- [x] [PVT](httpxxx') (ICCV'2021)
+- [x] [PVTV2](httpxxx') (CVMJ'2022)
+
+</details>
+
+### Model Request
+
+We will keep up with the latest progress of the community, and support more popular algorithms and frameworks. If you have any feature requests, please feel free to leave a comment in [MMPose Roadmap](httpxxx').
+
+## Contributing
+
+We appreciate all contributions to improve MMPose. Please refer to [CONTRIBUTING.md](httpxxx') for the contributing guideline.
+
+## Acknowledgement
+
+MMPose is an open source project that is contributed by researchers and engineers from various colleges and companies.
+We appreciate all the contributors who implement their methods or add new features, as well as users who give valuable feedbacks.
+We wish that the toolbox and benchmark could serve the growing research community by providing a flexible toolkit to reimplement existing methods and develop their own new models.
+
+## Citation
+
+If you find this project useful in your research, please consider cite:
+
+```bibtex
+@misc{mmpose2020,
+    title={OpenMMLab Pose Estimation Toolbox and Benchmark},
+    author={MMPose Contributors},
+    howpublished = {\url{httpxxx'
+    year={2020}
+}
+```
+
+## License
+
+This project is released under the [Apache 2.0 license](LICENSE).
+
+## Projects in OpenMMLab
+
+- [MMEngine](httpxxx'): OpenMMLab foundational library for training deep learning models.
+- [MMCV](httpxxx'): OpenMMLab foundational library for computer vision.
+- [MMPreTrain](httpxxx'): OpenMMLab pre-training toolbox and benchmark.
+- [MMagic](httpxxx'): Open**MM**Lab **A**dvanced, **G**enerative and **I**ntelligent **C**reation toolbox.
+- [MMDetection](httpxxx'): OpenMMLab detection toolbox and benchmark.
+- [MMDetection3D](httpxxx'): OpenMMLab's next-generation platform for general 3D object detection.
+- [MMRotate](httpxxx'): OpenMMLab rotated object detection toolbox and benchmark.
+- [MMTracking](httpxxx'): OpenMMLab video perception toolbox and benchmark.
+- [MMSegmentation](httpxxx'): OpenMMLab semantic segmentation toolbox and benchmark.
+- [MMOCR](httpxxx'): OpenMMLab text detection, recognition, and understanding toolbox.
+- [MMPose](httpxxx'): OpenMMLab pose estimation toolbox and benchmark.
+- [MMHuman3D](httpxxx'): OpenMMLab 3D human parametric model toolbox and benchmark.
+- [MMFewShot](httpxxx'): OpenMMLab fewshot learning toolbox and benchmark.
+- [MMAction2](httpxxx'): OpenMMLab's next-generation action understanding toolbox and benchmark.
+- [MMFlow](httpxxx'): OpenMMLab optical flow toolbox and benchmark.
+- [MMDeploy](httpxxx'): OpenMMLab Model Deployment Framework.
+- [MMRazor](httpxxx'): OpenMMLab model compression toolbox and benchmark.
+- [MIM](httpxxx'): MIM installs OpenMMLab packages.
+- [Playground](httpxxx'): A central hub for gathering and showcasing amazing projects built upon OpenMMLab.
+
+

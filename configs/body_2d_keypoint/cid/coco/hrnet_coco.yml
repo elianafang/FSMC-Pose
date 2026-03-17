@@ -1,0 +1,41 @@
+Collections:
+- Name: CID
+  Paper:
+    Title: Contextual Instance Decoupling for Robust Multi-Person Pose Estimation
+    URL: httpxxx'
+  README: httpxxx'
+Models:
+- Config: configs/body_2d_keypoint/cid/coco/cid_hrnet-w32_8xb20-140e_coco-512x512.py
+  In Collection: CID
+  Metadata:
+    Architecture: &id001
+    - CID
+    - HRNet
+    Training Data: COCO
+  Name: cid_hrnet-w32_8xb20-140e_coco-512x512
+  Results:
+  - Dataset: COCO
+    Metrics:
+      AP: 0.704
+      AP@0.5: 0.894
+      AP@0.75: 0.775
+      AR: 0.753
+      AR@0.5: 0.928
+    Task: Body 2D Keypoint
+  Weights: httpxxx'
+- Config: configs/body_2d_keypoint/cid/coco/cid_hrnet-w48_8xb20-140e_coco-512x512.py
+  In Collection: CID
+  Metadata:
+    Architecture: *id001
+    Training Data: COCO
+  Name: cid_hrnet-w48_8xb20-140e_coco-512x512
+  Results:
+  - Dataset: COCO
+    Metrics:
+      AP: 0.715
+      AP@0.5: 0.9
+      AP@0.75: 0.782
+      AR: 0.765
+      AR@0.5: 0.935
+    Task: Body 2D Keypoint
+  Weights: httpxxx'
