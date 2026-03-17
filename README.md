@@ -1,6 +1,12 @@
-# FSMCPose
+# FSMC-Pose
 
-This configuration is based on MMPose. Please install MMPose first following the instructions below. **Since external links cannot be included, we will make the related links publicly available later.** And the dataset will be made public later.
+FSMC-Pose is a real-time framework for accurate dairy cattle mounting pose estimation. This configuration is based on MMPose. Please install MMPose first following the instructions below.
+
+<img width="1000" height="642" alt="image" src="https://github.com/user-attachments/assets/f2e31c7a-c4bf-4cbf-9098-8738540362bd" />
+<img width="1000" height="835" alt="image" src="https://github.com/user-attachments/assets/cddac540-0f7e-4244-b263-78b3702fcf70" />
+
+## Dataset
+We created the MOUNT-Cattle dataset with 1,176 mounting instances in COCO format, supporting drop-in training across pose estimation models. MOUNT-Cattle is designed to advance cattle pose estimation and is available for download on Hugging Face [here](URL). In our experiments, we used a comprehensive dataset that combines MOUNT-Cattle with the public NWAFU-Cattle dataset. 
 
 ## Installation
 
