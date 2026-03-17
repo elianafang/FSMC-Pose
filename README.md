@@ -1,9 +1,30 @@
-# FSMC-Pose
+# FSMC-Pose: Frequency and Spatial Fusion with Multiscale Self-calibration for Cattle Mounting Pose Estimation
 
 FSMC-Pose is a real-time framework for accurate dairy cattle mounting pose estimation. This configuration is based on MMPose. Please install MMPose first following the instructions below.
 
-<img width="1000" height="642" alt="image" src="https://github.com/user-attachments/assets/f2e31c7a-c4bf-4cbf-9098-8738540362bd" />
-<img width="1000" height="835" alt="image" src="https://github.com/user-attachments/assets/cddac540-0f7e-4244-b263-78b3702fcf70" />
+<p align="center">
+  <a href="PAPER_URL">
+    <img src="https://img.shields.io/badge/FSMC--Pose-Paper-E76F51?style=flat-square&logo=arxiv&logoColor=white" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="DATASET_URL">
+    <img src="https://img.shields.io/badge/MOUNT--Cattle-Dataset-c5a730?style=flat-square&logo=huggingface&logoColor=white" />
+  </a>
+    &nbsp;&nbsp;
+  <a href="CODE_URL">
+    <img src="https://img.shields.io/badge/FSMC--Pose-Code-4C9BDB?style=flat-square&logo=github&logoColor=white" />
+  </a>
+  </p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f2e31c7a-c4bf-4cbf-9098-8738540362bd" width="52%" />
+  <img src="https://github.com/user-attachments/assets/cddac540-0f7e-4244-b263-78b3702fcf70" width="47%" />
+</p>
+
+
+## Updates/News 📣
+* 🏆 **News (Feb. 2026)**: We are excited to announce that FSMC-Pose has been accepted for CVPR 2026 Findings! 🎉
+* 🔗 **News**: Please find the open-source dataset on Hugging Face: [MOUNT-Cattle](URL).
 
 ## Dataset
 We created the MOUNT-Cattle dataset with 1,176 mounting instances in COCO format, supporting drop-in training across pose estimation models. MOUNT-Cattle is designed to advance cattle pose estimation and is available for download on Hugging Face [here](URL). In our experiments, we used a comprehensive dataset that combines MOUNT-Cattle with the public NWAFU-Cattle dataset. 
@@ -16,7 +37,7 @@ We created the MOUNT-Cattle dataset with 1,176 mounting instances in COCO format
 - 64GB RAM
 - GPU: P100 or compatible
 
-**Note:** All installation steps follow the [official MMPose documentation].
+**Note:** All installation steps follow the [official MMPose documentation](https://mmpose.readthedocs.io/en/latest/).
 
 ### 2. Create Conda Virtual Environment
 
@@ -155,3 +176,5 @@ python tools/test.py /data/configs/FSMCPose.py /data/work_dirs/FSMCPose/latest.p
 
 **Note:** The checkpoint hook saves the best model based on `coco/AP` metric with `greater` rule (higher is better). Maximum 10 checkpoints are kept.
 
+## Contact
+[elianafang](lifangjing@bjtu.edu.cn)
