@@ -185,5 +185,5 @@ python tools/test.py /data/configs/FSMCPose.py /data/work_dirs/FSMCPose/latest.p
 
 **Note:** The checkpoint hook saves the best model based on `coco/AP` metric with `greater` rule (higher is better). Maximum 10 checkpoints are kept.
 
-## Contact
-[elianafang](lifangjing@bjtu.edu.cn)
+## Contact 📮
+Email: [elianafang](mailto:lifangjing@bjtu.edu.cn)
