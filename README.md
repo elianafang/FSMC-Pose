@@ -1,15 +1,13 @@
 # FSMC-Pose: Frequency and Spatial Fusion with Multiscale Self-calibration for Cattle Mounting Pose Estimation
+
 FSMC-Pose is a real-time framework for accurate dairy cattle mounting pose estimation. This configuration is based on MMPose. Please install MMPose first following the instructions below.
+
 <p align="center">
   <img width="150" height="150" alt="bjtu" src="https://github.com/user-attachments/assets/5f5f5530-f09d-42a0-b5af-1f306e712456" />
     <img width="150" height="150" alt="logo" src="https://github.com/user-attachments/assets/3d409ea0-9eb1-4600-bc80-db2cc35b406c" />
-    <img width="150" height="150" alt="qinghua" src="https://github.com/user-attachments/assets/e762ce93-97c8-4826-9b53-02a65056b305" />    
-<img width="220" height="250" alt="image" src="https://github.com/user-attachments/assets/0f50b9b6-0a94-40a1-b67a-2ed276f9a4c7" />
+    <img width="150" height="150" alt="qinghua" src="https://github.com/user-attachments/assets/e762ce93-97c8-4826-9b53-02a65056b305" />
+   <img width="150" height="150" alt="gu" src="https://github.com/user-attachments/assets/d51cae6e-d4ff-4542-a26b-c984968d2cd0" />
   </p>
-
-
-
-  
 
 <p align="center">
   <a href="PAPER_URL">
@@ -25,17 +23,21 @@ FSMC-Pose is a real-time framework for accurate dairy cattle mounting pose estim
   </a>
   </p>
 
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/cddac540-0f7e-4244-b263-78b3702fcf70" width="47%" />
   <img src="https://github.com/user-attachments/assets/f2e31c7a-c4bf-4cbf-9098-8738540362bd" width="52%" />
 </p>
 
 
+
 ## Updates/News 📣
+
 * 🎉 **News (Feb. 2026)**: We are excited to announce that FSMC-Pose has been accepted for CVPR 2026 Findings!
 * 🔗 **News**: Please find the open-source dataset on Hugging Face: [MOUNT-Cattle](URL).
 
 ## Dataset
+
 We created the MOUNT-Cattle dataset with 1,176 mounting instances in COCO format, supporting drop-in training across pose estimation models. MOUNT-Cattle is designed to advance cattle pose estimation and is available for download on Hugging Face [here](URL). In our experiments, we used a comprehensive dataset that combines MOUNT-Cattle with the public NWAFU-Cattle dataset. 
 
 ## Installation
@@ -185,5 +187,6 @@ python tools/test.py /data/configs/FSMCPose.py /data/work_dirs/FSMCPose/latest.p
 
 **Note:** The checkpoint hook saves the best model based on `coco/AP` metric with `greater` rule (higher is better). Maximum 10 checkpoints are kept.
 
-## Contact
-[elianafang](lifangjing@bjtu.edu.cn)
+## Contact 📮
+
+Email: [elianafang](mailto:lifangjing@bjtu.edu.cn)
