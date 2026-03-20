@@ -6,7 +6,7 @@ from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmpose.registry import MODELS
 from .base_backbone import BaseBackbone
-from .utils import InvertedResidual,InvertedResidual_EdgeGaussianAggregation,InvertedResidual_SFEB,InvertedResidual_RAB
+from .utils import InvertedResidual,InvertedResidual_Gaussian,InvertedResidual_SFEB,InvertedResidual_RAB
 
 @MODELS.register_module()
 class MobileNetV3_InvertedResidual_SFEB_RAB(BaseBackbone):
@@ -141,7 +141,7 @@ class MobileNetV3_InvertedResidual_SFEB_RAB(BaseBackbone):
             elif i in use_MSGDC_layers:
                 block=InvertedResidual_RAB
             else :
-                block =InvertedResidual_EdgeGaussianAggregation 
+                block =InvertedResidual_Gaussian 
             layer = block(
                 in_channels=self.in_channels,
                 out_channels=out_channels,

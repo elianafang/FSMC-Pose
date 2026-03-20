@@ -31,7 +31,7 @@ def get_model_aliases(scope: str = 'mmpose') -> Dict[str, str]:
             else:
                 raise ValueError(
                     'encounter an unexpected alias type. Please raise an '
-                    'issue at httpxxx' '
+                    'issue at https://github.com/open-mmlab/mmpose/issues '
                     'to announce us')
 
     return model_alias_dict

@@ -287,7 +287,7 @@ class RTMCCHead_SCSC(BaseHead):
 
         self.cls_x = nn.Linear(gau_cfg['hidden_dims'], W, bias=False)
         self.cls_y = nn.Linear(gau_cfg['hidden_dims'], H, bias=False)
-        self.RCSSC=RCSSC(out_channels)
+        self.SCSC=SCSC(out_channels)
     def forward(self, feats: Tuple[Tensor]) -> Tuple[Tensor, Tensor]:
         """Forward the network.
 
