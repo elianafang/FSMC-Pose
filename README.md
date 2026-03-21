@@ -1,5 +1,14 @@
 # FSMC-Pose: Frequency and Spatial Fusion with Multiscale Self-calibration for Cattle Mounting Pose Estimation
 
+<p align="center">
+
+[![Paper](https://img.shields.io/badge/FSMC--Pose-Paper-E76F51?style=flat&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.16596)
+&nbsp;&nbsp;
+[![Dataset](https://img.shields.io/badge/MOUNT--Cattle-Dataset-c5a730?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/eelianafang/MOUNT-Cattle)
+&nbsp;&nbsp;
+[![Code](https://img.shields.io/badge/FSMC--Pose-Code-4C9BDB?style=flat&logo=github&logoColor=white)](https://github.com/elianafang/FSMC-Pose)
+
+</p>
 FSMC-Pose is a real-time framework for accurate dairy cattle mounting pose estimation. This configuration is based on MMPose. Please install MMPose first following the instructions below.
 
 <p align="center">
@@ -9,19 +18,7 @@ FSMC-Pose is a real-time framework for accurate dairy cattle mounting pose estim
    <img width="150" height="150" alt="gu" src="https://github.com/user-attachments/assets/d51cae6e-d4ff-4542-a26b-c984968d2cd0" />
   </p>
 
-<p align="center">
-  <a href="https://arxiv.org/abs/2603.16596">
-    <img src="https://img.shields.io/badge/FSMC--Pose-Paper-E76F51?style=flat&logo=arxiv&logoColor=white" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://huggingface.co/datasets/eelianafang/MOUNT-Cattle">
-    <img src="https://img.shields.io/badge/MOUNT--Cattle-Dataset-c5a730?style=flat&logo=huggingface&logoColor=white" />
-  </a>
-    &nbsp;&nbsp;
-  <a href="https://github.com/elianafang/FSMC-Pose">
-    <img src="https://img.shields.io/badge/FSMC--Pose-Code-4C9BDB?style=flat&logo=github&logoColor=white" />
-  </a>
-</p>
+
 
 
 <p align="center">
@@ -190,3 +187,13 @@ python tools/test.py /data/configs/FSMCPose.py /data/work_dirs/FSMCPose/latest.p
 ## Contact 📮
 
 Email: [elianafang](mailto:lifangjing@bjtu.edu.cn)
+
+## Citation
+```
+@article{li2026fsmc,
+  title={FSMC-Pose: Frequency and Spatial Fusion with Multiscale Self-calibration for Cattle Mounting Pose Estimation},
+  author={Li, Fangjing and Wang, Zhihai and Ding, Xinxin and Liu, Haiyang and Gao, Ronghua and Wang, Rong and Zhu, Yao and Jin, Ming},
+  journal={arXiv preprint arXiv:2603.16596},
+  year={2026}
+}
+```
