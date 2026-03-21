@@ -10,18 +10,18 @@ FSMC-Pose is a real-time framework for accurate dairy cattle mounting pose estim
   </p>
 
 <p align="center">
-  <a href="[PAPER_URL](https://arxiv.org/abs/2603.16596)">
+  <a href="https://arxiv.org/abs/2603.16596">
     <img src="https://img.shields.io/badge/FSMC--Pose-Paper-E76F51?style=flat-square&logo=arxiv&logoColor=white" />
   </a>
   &nbsp;&nbsp;
-  <a href="[DATASET_URL](https://huggingface.co/datasets/eelianafang/MOUNT-Cattle)">
+  <a href="https://huggingface.co/datasets/eelianafang/MOUNT-Cattle">
     <img src="https://img.shields.io/badge/MOUNT--Cattle-Dataset-c5a730?style=flat-square&logo=huggingface&logoColor=white" />
   </a>
     &nbsp;&nbsp;
-  <a href="CODE_URL">
+  <a href="https://github.com/elianafang/FSMC-Pose">
     <img src="https://img.shields.io/badge/FSMC--Pose-Code-4C9BDB?style=flat-square&logo=github&logoColor=white" />
   </a>
-  </p>
+</p>
 
 
 <p align="center">
